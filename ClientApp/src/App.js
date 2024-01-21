@@ -5,11 +5,12 @@ import './components/App.css'
 import { useState } from 'react'
 
 function App() {
-  const [clockProps, setClockProps] = useState(new ClockProps())
+    const [clockProps, setClockProps] = useState(new ClockProps())
+  
   return (
     <div className="App">
-      <Clock clockProps={clockProps} />
-      <SetClockProps setClockProps={setClockProps} />
+          <Clock clockProps={clockProps}/>
+          <SetClockProps setClockProps={setClockProps}/>
     </div>
   )
 }
